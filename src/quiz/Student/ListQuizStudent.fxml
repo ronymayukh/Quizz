@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.Student.ListQuizStudent">
+   <children>
+      <Label layoutX="197.0" layoutY="14.0" text="QUIZZESS">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <ScrollPane layoutX="14.0" layoutY="50.0" prefHeight="342.0" prefWidth="480.0">
+         <content>
+            <TableView fx:id="tableQuizStudent" prefHeight="340.0" prefWidth="477.0">
+              <columns>
+                <TableColumn fx:id="colQuizName" prefWidth="237.60000896453857" text="Quiz Name" />
+                <TableColumn fx:id="colMarksObtained" prefWidth="239.19996643066406" text="Marks Obtained" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnAnalyse" layoutX="415.0" layoutY="402.0" mnemonicParsing="false" onAction="#goToAnalysis" text="ANALYSE" />
+   </children>
+</AnchorPane>

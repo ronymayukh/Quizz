@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.Faculty.ListQuizFaculty">
+   <children>
+      <ScrollPane layoutX="22.0" layoutY="49.0" prefHeight="302.0" prefWidth="426.0">
+         <content>
+            <TableView fx:id="tableQuizList" prefHeight="299.0" prefWidth="422.0">
+              <columns>
+                <TableColumn fx:id="colQuizName" prefWidth="139.5999813079834" text="Quiz Name" />
+                <TableColumn fx:id="colAccessCode" prefWidth="84.4000244140625" text="Access Code" />
+                  <TableColumn fx:id="colCreatedOn" prefWidth="197.5999755859375" text="Created On" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnAnalyse" layoutX="357.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToAnalysis" text="ANALYSE" />
+      <Label layoutX="178.0" layoutY="14.0" prefHeight="35.0" prefWidth="113.0" text="QUIZZESS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

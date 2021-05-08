@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="614.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.Faculty.CreateQuizFaculty">
+   <children>
+       <Label layoutX="54.0" layoutY="25.0" prefHeight="26.0" prefWidth="72.0" text="Quiz Name" />
+      <TextField fx:id="quizName" layoutX="126.0" layoutY="26.0" />
+      <Label layoutX="53.0" layoutY="71.0" text="Quiz Duration" />
+      <ComboBox fx:id="quizTime" layoutX="132.0" layoutY="66.0" prefHeight="26.0" prefWidth="57.0" />
+      <ScrollPane layoutX="40.0" layoutY="107.0" prefHeight="433.0" prefWidth="816.0">
+         <content>
+            <VBox fx:id="questionBox" prefHeight="212.0" prefWidth="813.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnAddOneQuestion" layoutX="40.0" layoutY="554.0" mnemonicParsing="false" onAction="#addOneQuestion" text="Add More Question" />
+      <Button fx:id="btnCreateQuiz" layoutX="764.0" layoutY="554.0" mnemonicParsing="false" onAction="#createQuiz" text="Create Quiz" />
+      <DatePicker fx:id="dtValidFrom" layoutX="399.0" layoutY="26.0" />
+      <DatePicker fx:id="dtValidTill" layoutX="660.0" layoutY="26.0" />
+      <Spinner fx:id="hhValidFrom" layoutX="399.0" layoutY="67.0" prefHeight="25.0" prefWidth="60.0" />
+      <Spinner fx:id="mmValidFrom" layoutX="486.0" layoutY="67.0" prefHeight="25.0" prefWidth="60.0" />
+      <Spinner fx:id="hhValidTill" layoutX="660.0" layoutY="67.0" prefHeight="25.0" prefWidth="60.0" />
+      <Spinner fx:id="mmValidTill" layoutX="747.0" layoutY="66.0" prefHeight="25.0" prefWidth="60.0" />
+      <Label layoutX="331.0" layoutY="29.0" text="Valid from:" />
+      <Label layoutX="599.0" layoutY="30.0" text="Valid till:" />
+   </children>
+</AnchorPane>

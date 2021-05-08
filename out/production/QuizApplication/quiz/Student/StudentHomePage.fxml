@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.Student.StudentHomePage">
+   <children>
+      <Label layoutX="132.0" layoutY="7.0" text="Student Home Page" textFill="#7ad2ff">
+         <font>
+            <Font name="Brush Script MT Italic" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGiveQuiz" layoutX="255.0" layoutY="139.0" mnemonicParsing="false" onAction="#GiveAQuiz" text="GIVE A QUIZ" />
+      <Button fx:id="btnAnalyseAQuiz" layoutX="245.0" layoutY="208.0" mnemonicParsing="false" onAction="#AnalyseAQuiz" text="ANALYSE A QUIZ" />
+      <ImageView fitHeight="299.0" fitWidth="203.0" layoutX="14.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/StudentHomePage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="276.0" fitWidth="130.0" layoutX="449.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/StudentHomePage2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

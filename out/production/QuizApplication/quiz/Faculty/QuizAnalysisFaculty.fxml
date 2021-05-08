@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="578.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.Faculty.QuizAnalysisFaculty">
+   <children>
+      <Label fx:id="labelQuizDetails" layoutX="318.0" layoutY="16.0" text="QuizDetails">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <LineChart fx:id="lineGraph" layoutX="27.0" layoutY="47.0" prefHeight="284.0" prefWidth="683.0">
+        <xAxis>
+          <CategoryAxis label="Marks Obtained" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Number of Students" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="labelQuizSummary" layoutX="583.0" layoutY="345.0" prefHeight="224.0" prefWidth="144.0" text="Quiz Summary" />
+      <ScrollPane fx:id="scrollPane" layoutX="68.0" layoutY="345.0" prefHeight="215.0" prefWidth="506.0">
+         <content>
+            <TableView fx:id="tableStudentMarks" prefHeight="211.0" prefWidth="502.0">
+              <columns>
+                <TableColumn fx:id="colStudentName" prefWidth="343.1999969482422" text="Name" />
+                <TableColumn fx:id="colStudentNumber" prefWidth="158.4000244140625" text="Marks" />
+              </columns>
+            </TableView>
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

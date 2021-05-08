@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.Student.QuizPageStudent">
+   <children>
+      <Separator layoutX="10.0" layoutY="66.0" prefHeight="15.0" prefWidth="878.0" />
+      <ScrollPane layoutX="14.0" layoutY="85.0" prefHeight="455.0" prefWidth="870.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="vBoxQuestions" layoutX="11.0" layoutY="14.0" prefHeight="434.0" prefWidth="849.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="btnFinishTest" layoutX="789.0" layoutY="30.0" mnemonicParsing="false" onAction="#finishTest" prefHeight="26.0" prefWidth="83.0" text="Finish Test" />
+      <Label fx:id="timerLabel" layoutX="62.0" layoutY="35.0" text="TIME : 04 : 52 " />
+   </children>
+</AnchorPane>
