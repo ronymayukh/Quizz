@@ -8,11 +8,7 @@
       <Separator layoutX="10.0" layoutY="66.0" prefHeight="15.0" prefWidth="878.0" />
       <ScrollPane layoutX="14.0" layoutY="85.0" prefHeight="455.0" prefWidth="870.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <VBox fx:id="vBoxQuestions" layoutX="11.0" layoutY="14.0" prefHeight="434.0" prefWidth="849.0" />
-               </children>
-            </AnchorPane>
+                  <VBox fx:id="vBoxQuestions" layoutX="2.0" layoutY="5.0" prefHeight="437.0" prefWidth="859.0" />
         </content>
       </ScrollPane>
       <Button fx:id="btnFinishTest" layoutX="789.0" layoutY="30.0" mnemonicParsing="false" onAction="#finishTest" prefHeight="26.0" prefWidth="83.0" text="Finish Test" />

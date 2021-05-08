@@ -61,7 +61,7 @@ public class CreateQuizFaculty {
 
     @FXML
     public void initialize(){
-        quizTime.getItems().addAll(10,15,20,30,45,50,60);
+        quizTime.getItems().addAll(2,10,15,20,30,45,50,60);
         hhValidTill.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0,23,13));
         hhValidFrom.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0,23,13));
         mmValidTill.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0,59,30));
