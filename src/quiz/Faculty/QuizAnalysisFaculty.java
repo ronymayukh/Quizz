@@ -132,7 +132,7 @@ public class QuizAnalysisFaculty {
             @Override
             public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2)
             {
-                return o2.getValue().compareTo(o1.getValue());
+                return o1.getKey().compareTo(o2.getKey());
             }
         });
 
